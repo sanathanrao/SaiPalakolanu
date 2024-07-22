@@ -604,7 +604,7 @@ option[value=""][disabled] {
     transform: translateX(0);
   }
   100%{
-    transform: translateX(calc(-250px * 4));
+    transform: translateX(calc(-250px * 7));
   }
 }
 
@@ -619,7 +619,7 @@ option[value=""][disabled] {
 .slider .slide-track{
   animation: scroll 40s linear infinite;
   display: flex;
-  width: calc(250px * 8);
+  width: calc(250px * 14);
 }
 .slider .slide{
   height: 100px;
