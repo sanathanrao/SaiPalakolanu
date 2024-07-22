@@ -133,6 +133,18 @@
   width: 90%;
   line-height: 35px;
 }
+@media screen and (max-width: 1000px){
+  .profilesection{
+     flex-direction: column;
+     text-align: center;
+  }
+  .proftext{
+    margin-top: 20px;
+  }
+}
+
+
+
 /* ----------------------------- */
 .servicessection{
   font-family: "Work Sans", sans-serif;
@@ -203,6 +215,15 @@
 }
 .servicesbtn:hover{
   filter: brightness(1.2);
+}
+@media screen and (max-width: 1000px){
+  .servicessection{
+    flex-direction: column;
+  }
+  .sec{
+    align-items: center;
+    margin-top: 60px;
+  }
 }
 /* ------------------------------------------------ */
 .successection{
@@ -342,7 +363,6 @@ border: 1px solid rgba(180, 157, 157, 1);
 /* ----------------- */
 .getsectins{
   display: flex;
-
   background: rgb(244,243,232);
   background: linear-gradient(180deg, rgba(244,243,232,1) 3%, rgba(228,219,199,1) 62%);
 }
@@ -510,6 +530,15 @@ form .button input:hover {
     width: 0;
   }
 }
+/* ==MEDIA QURIES */
+@media screen and (max-width: 1000px){
+ .getsectins{
+   flex-direction: column;
+ }
+}
+
+
+
 /* -------------------- */
 option[value=""][disabled] {
   display: none;
@@ -624,5 +653,4 @@ option[value=""][disabled] {
 .slider .slide{
   height: 100px;
   width: 250px;
-
 }
