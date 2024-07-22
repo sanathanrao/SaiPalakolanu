@@ -546,3 +546,83 @@ option[value=""][disabled] {
   font-family: "Work Sans", sans-serif;
   font-weight: 500;
 }
+/* --------------------------- */
+.contactme{
+  display: flex;
+  justify-content: space-between;
+  font-family: "Work Sans", sans-serif;
+  padding: 60px;
+  padding-bottom: 160px;
+  background-color: #212121;
+  color: #f3f2e7;
+}
+.nameandlink{
+  margin-right: 100px;
+  width: 100%;
+}
+.profiname{
+  margin-bottom: 50px;
+}
+.growthseo{
+  font-weight: 400;
+  margin-bottom: 20px;
+}
+.fa {
+  cursor: pointer;
+  font-size: 50px;
+  width: 40px;
+  height: 40px;
+  background-color: #ebebeb;
+  color: #212121;
+  font-size: 30px;
+  margin: 0 5px;
+  border-radius: 100%;
+  text-align: center;
+  padding-top: 10px;
+}
+.Ausopp{
+ font-size: 18px;
+ line-height: 35px;
+}
+/* --------------Community------------------- */
+.community{
+  padding: 60px;
+  background-image: url('https://images.pexels.com/photos/219998/pexels-photo-219998.jpeg?auto=compress&cs=tinysrgb&w=1260&h=750&dpr=1');
+  background-position: center;
+  background-repeat: no-repeat;
+  background-size: cover;
+}
+.join{
+  color: #fff;
+}
+.staydw{
+  color: #ebebeb;
+}
+/* --------------------client Image slide section------------------------------ */
+@keyframes scroll{
+  0%{
+    transform: translateX(0);
+  }
+  100%{
+    transform: translateX(calc(-250px * 4));
+  }
+}
+
+
+.slider{
+  height: 100px;
+  margin: auto;
+  overflow: hidden;
+  position: relative;
+  width: auto;
+}
+.slider .slide-track{
+  animation: scroll 40s linear infinite;
+  display: flex;
+  width: calc(250px * 8);
+}
+.slider .slide{
+  height: 100px;
+  width: 250px;
+
+}
