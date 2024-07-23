@@ -57,6 +57,51 @@
   #check{
     display: none;
   }
+  @media screen and (max-width: 800px){
+   .simg{
+     width: 250px;
+     margin-left: 0;
+   }
+   .getintouch{
+    padding: 12px 22px;
+    margin-left: 20px;
+    font-size: 15px;
+   }
+  }
+  @media screen and (max-width: 620px){
+    .simg{
+      width: 180px;
+      margin-left: 0;
+    }
+    .getintouch{
+     padding: 10px 20px;
+     margin-left: 20px;
+     font-size: 14px;
+    }
+    .servw{
+      display: none;
+    }
+  }
+  @media screen and (max-width: 500px){
+    .simg{
+      width: 150px;
+      margin-left: 5px;
+    }
+    nav{
+      padding: 15px;
+    }
+  }
+  @media screen and (max-width: 430px){
+    .simg{
+      width: 150px;
+    }
+    nav{
+      padding: 10px;
+    }
+  }
+  
+  /* ============================== */
+  
   /* @media (max-width: 1170px){
     nav{
         padding: 20px 0;
@@ -113,6 +158,25 @@
   padding: 70px;
   width: 90%;
 }
+@media screen and (max-width: 800px){
+  .empower{
+    font-size: 50px;
+    width: 100%;
+  }
+}
+@media screen and (max-width: 620px){
+  .empower{
+    font-size: 40px;
+    padding: 30px;
+  }
+}
+@media screen and (max-width: 500px){
+  .empower{
+    font-size: 30px;
+    padding: 25px;
+  }
+}
+/* ----------------------------------------- */
 .profilesection{
   padding: 60px;
   display: flex;
@@ -142,8 +206,53 @@
     margin-top: 20px;
   }
 }
-
-
+@media screen and (max-width: 800px){
+  .profilesection{
+    padding: 30px;
+ }
+ .proftext{
+   margin-top: 20px;
+   line-height: 30px;
+ }
+}
+@media screen and (max-width: 700px){
+  .profilesection{
+    padding: 25px;
+ }
+ .proftext{
+   margin-top: 20px;
+   padding-left: 50px;
+ }
+}
+@media screen and (max-width: 600px){
+  .profilesection{
+    padding: 20px;
+ }
+ .proftext{
+   margin-top: 20px;
+   padding-left: 34px;
+ }
+}
+@media screen and (max-width: 500px){
+  .profilesection{
+    padding: 15px;
+ }
+ .proftext{
+  text-align: start;
+   margin-top: 20px;
+   padding-left: 20px;
+   width: 100%;
+ }
+}
+@media screen and (max-width: 400px){
+  .profilesection{
+    padding: 15px;
+ }
+ .proftext{
+   margin-top: 20px;
+   padding-left: 2px;
+ }
+}
 
 /* ----------------------------- */
 .servicessection{
@@ -225,6 +334,40 @@
     margin-top: 60px;
   }
 }
+@media screen and (max-width: 750px){
+  .help{
+    text-align: start;
+  }
+}
+@media screen and (max-width: 500px){
+  .servicessection{
+    padding: 30px;
+  }
+  .sec img{
+    height: 350px;
+    width: 350px;
+  }
+  .servicesbtn{
+    margin-left: 0px;
+    margin-top: 20px;
+  }
+}
+@media screen and (max-width: 400px){
+  .servicessection{
+    padding: 25px;
+  }
+  .sec img{
+    height: 300px;
+    width: 300px;
+  }
+}
+/* ---=)-= */
+@media screen and (max-width: 1250px){
+  .profss{
+    flex-direction: column-reverse;
+  }
+}
+
 /* ------------------------------------------------ */
 .successection{
   font-family: "Work Sans", sans-serif;
@@ -347,8 +490,42 @@ border: 1px solid rgba(180, 157, 157, 1);
 }
 .typeindpoid{
   display: flex;
-  align-items: center;
 }
+@media screen and (max-width: 1100px){
+  .typeindpoid{
+    flex-direction: column;
+    text-align: start;
+  }
+  .submit{
+    margin-top: 10px;
+    width: 150px;
+  }
+  .input-main{
+    width: 300px;
+  }
+}
+@media screen and (max-width: 600px){
+  .newsletter{
+    padding: 30px;
+  }
+}
+@media screen and (max-width: 400px){
+  .newsletter{
+    padding: 20px;
+  }
+  .signup{
+    padding: 15px;
+  }
+}
+
+
+
+
+
+
+
+
+
 /* -------------------------------- */
 .getstatedtoday{
   padding: 60px;
@@ -391,6 +568,15 @@ border: 1px solid rgba(180, 157, 157, 1);
 }
 .input__box input{
   margin-top: 10px;
+  padding-left: 15px;
+  font-size: 18px;
+  font-family: "Varela Round", sans-serif;
+  border: 1px solid #212121;
+}
+.emailplaceqwer{
+  width: 100%;
+  height: 45px;
+  margin-bottom: 12px;
 }
 
 .container form .user__details {
@@ -414,7 +600,6 @@ form .user__details .input__box {
   height: 45px;
   width: 100%;
   outline: none;
-  border: 1px solid var(--main-grey);
   padding-left: 15px;
   font-size: 16px;
   border-bottom-width: 2px;
@@ -425,8 +610,6 @@ form .user__details .input__box {
   height: 45px;
   width: 100%;
   outline: none;
-  border-radius: 5px;
-  border: 1px solid var(--main-grey);
   padding-left: 15px;
   font-size: 16px;
   border-bottom-width: 2px;
@@ -434,6 +617,7 @@ form .user__details .input__box {
   margin-top: 10px;
   border: 1px solid #212121;
   font-family: "Work Sans", sans-serif;
+  margin: 10px 0;
 }
 .selectopti option{
   color: #212121;
@@ -441,7 +625,9 @@ form .user__details .input__box {
 }
 .user__details .input__box input:focus,
 .user__details .input__box input:valid {
-  border-color: var(--main-purple);
+  font-size: 18px;
+  font-family: "Varela Round", sans-serif;
+  border: 1px solid #212121;
 }
 
 /* inside the form gender details */
@@ -530,10 +716,30 @@ form .button input:hover {
     width: 0;
   }
 }
+@media  screen and (max-width: 500px){
+  .getstatedtoday{
+    padding: 30px;
+  }
+  .container{
+    padding: 0 30px;
+  }
+  .input__box textarea{
+    width: 100%;
+  }
+  .getivbqn{
+    margin-bottom: 30px;
+  }
+}
+
+
+
 /* ==MEDIA QURIES */
 @media screen and (max-width: 1000px){
  .getsectins{
    flex-direction: column;
+ }
+ .container{
+  padding-top: 0;
  }
 }
 
@@ -544,12 +750,13 @@ option[value=""][disabled] {
   display: none;
 }
 .textsomeiie{
-  width: 550px;
-  height: 150px;
+  width: 100%;
+  height: 120px;
   padding: 15px;
-  margin-top: 10px;
+  margin: 10px 0;
   font-size: 18px;
   font-family: "Varela Round", sans-serif;
+  border: 1px solid #212121;
 }
 .getivbqn{
   font-weight: 500;
@@ -558,6 +765,7 @@ option[value=""][disabled] {
   background: #212E21;
   padding: 20px 50px;
   font-size: 16px;
+  margin-top: 10px;
 }
 .getivbqn:hover{
   filter: brightness(1.2);
@@ -613,6 +821,24 @@ option[value=""][disabled] {
  font-size: 18px;
  line-height: 35px;
 }
+
+@media screen and (max-width: 1000px){
+  .contactme{
+    flex-direction: column;
+  }
+  .Ausopp{
+    margin-top: 20px;
+  }
+}
+@media screen and (max-width: 500px){
+  .contactme{
+    padding: 25px;
+  }
+}
+
+
+
+
 /* --------------Community------------------- */
 .community{
   padding: 60px;
@@ -627,6 +853,16 @@ option[value=""][disabled] {
 .staydw{
   color: #ebebeb;
 }
+@media screen and (max-width: 600px){
+ .community{
+  padding: 30px;
+ }
+}
+@media screen and (max-width: 400px){
+  .community{
+   padding: 20px;
+  }
+ }
 /* --------------------client Image slide section------------------------------ */
 @keyframes scroll{
   0%{
