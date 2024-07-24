@@ -626,6 +626,11 @@ align-items: center;
   }
 }
 @media screen and (max-width: 450px){
+  .block{
+    animation: appear  linear;
+    animation-timeline: view();
+    animation-range: entry 0% cover 10%;
+  }
   .icons{
     top: 0;
   }
