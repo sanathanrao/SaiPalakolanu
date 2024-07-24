@@ -733,7 +733,7 @@ border: 1px solid rgba(180, 157, 157, 1);
     width: 150px;
   }
   .input-main{
-    width: 300px;
+    width: 290px;
   }
 }
 @media screen and (max-width: 600px){
