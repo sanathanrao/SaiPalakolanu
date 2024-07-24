@@ -1148,11 +1148,7 @@ option[value=""][disabled] {
     padding: 25px;
   }
 }
-@media screen and (max-width: 400px){
- .Ausopp{
-  display: none;
- }
-}
+
 
 
 
