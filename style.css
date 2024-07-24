@@ -151,6 +151,16 @@
     }
   } */
 /* ------------------------------------ */
+
+
+
+
+
+
+
+
+/* _+__++__ */
+
 .Businesses{
   background-color: #aec0ab;
   font-family: "Work Sans", sans-serif;
@@ -280,6 +290,7 @@
   font-weight: 700;
   color: #212E21;
   font-family: "Work Sans", sans-serif;
+  
 }
 .sec{
   display: flex;
@@ -1017,9 +1028,10 @@ option[value=""][disabled] {
 .nameandlink{
   margin-right: 100px;
   width: 100%;
+  text-align: center;
 }
 .profiname{
-  margin-bottom: 50px;
+  margin-bottom: 5px;
 }
 .growthseo{
   font-weight: 400;
@@ -1039,8 +1051,9 @@ option[value=""][disabled] {
   padding-top: 10px;
 }
 .Ausopp{
- font-size: 18px;
+ font-size: 20px;
  line-height: 35px;
+ font-style: italic;
 }
 
 @media screen and (max-width: 1000px){
