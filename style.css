@@ -629,19 +629,19 @@ align-items: center;
   .block{
     animation: appear  linear;
     animation-timeline: view();
-    animation-range: entry 0% cover 10%;
+    animation-range: entry 10% cover 0%;
   }
   .icons{
     top: 0;
   }
   .fa-diamond{
   position: relative;
-  left: -170px;
+  left: 70px;
   top: 0px;
   }
   .fa-heart{
     position: relative;
-    left: -170px;
+    left: 70px;
     top: 0px;
   }
   .fa-hand-o-up{
