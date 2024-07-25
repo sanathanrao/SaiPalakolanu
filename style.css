@@ -352,6 +352,8 @@
 @media screen and (max-width: 750px){
   .help{
     text-align: start;
+    font-size: 40px;
+    width: 100%;
   }
 }
 @media screen and (max-width: 500px){
