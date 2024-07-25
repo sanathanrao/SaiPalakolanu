@@ -920,6 +920,9 @@ text-align: center;
    top: 20px;
    position: relative;
   }
+  .yearsnedd {
+    font-size: 18px;
+  }
 }
 @media screen and (max-width: 450px){
   .block{
