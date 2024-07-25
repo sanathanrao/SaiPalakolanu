@@ -549,15 +549,18 @@
 .cripisgpgi{
   width: 100px;
   height: 100px;
+  margin-bottom: 20px;
   
 }
 .gravity{
   width: 100px;
   height: 100px;
+  margin-bottom: 20px;
 }
 .joinhands{
   width: 100px;
   height: 100px;
+  margin-bottom: 20px;
 }
 /* ----------------------------------- */
 .testimhedssa{
@@ -701,6 +704,7 @@ box-shadow: rgba(0, 0, 0, 0.09) 0px 2px 1px, rgba(0, 0, 0, 0.09) 0px 4px 2px, rg
   background: linear-gradient(360deg, rgba(244,243,232,1) 29%, rgba(209,218,202,1) 61%, rgba(174,192,171,1) 100%);
   display: flex;
   justify-content: center; 
+  align-items: center;
 }
 .centersmall{
   display: flex;
@@ -735,13 +739,16 @@ box-shadow: 10px 10px 40px -22px rgba(0,0,0,0.75);
   align-content: center;
   width: 400px;
   height: 400px;
+  margin-bottom: 30px;
   border-radius: 50%;
   background: rgb(240,240,240);
   background: linear-gradient(143deg, rgba(240,240,240,1) 41%, rgba(219,219,219,1) 100%);
   -webkit-box-shadow: 10px 10px 40px -22px rgba(0,0,0,0.75);
 -moz-box-shadow: 10px 10px 40px -22px rgba(0,0,0,0.75);
 box-shadow: 10px 10px 40px -22px rgba(0,0,0,0.75);
-  
+}
+.faith{
+  margin-top: 20px;
 }
 .smapledeste{
   font-size: 18px;
@@ -774,6 +781,8 @@ text-align: center;
   display: flex;
   align-items: center;
 }
+/* ---------------- */
+/*
 .fa-diamond:before , .fa-clock-o:before  , .fa-hand-o-up:before, .fa-heart:before {
   position: relative;
   top: 25px;
@@ -814,9 +823,16 @@ text-align: center;
   top: 60px;
   background: rgb(255,186,186);
   background: linear-gradient(143deg, rgba(255,186,186,1) 16%, rgba(255,0,0,1) 52%);
-}
+} */
 /* ===========*****************=========== */
 @media screen and (max-width: 1000px){
+  .updatewcusection{
+    flex-direction: column;
+   }
+
+   .remy , .bosch, .vivri{
+    left: 0;
+   }
  .centersmall{
    flex-direction: column;
  }
@@ -829,8 +845,14 @@ text-align: center;
  .ucolsr{
   transform: rotate(270deg);
  }
+ .graycircle{
+   margin: 20px;
+ }
 }
 @media screen and (max-width: 600px){
+  .updatewcusection{
+    padding: 40px;
+  }
   .wcus{
     width: 200px;
     height: 200px;
@@ -851,6 +873,15 @@ text-align: center;
   }
 }
 @media screen and (max-width: 500px){
+  .remy, .bosch, .vivri{
+    flex-direction: column;
+  }
+  .starbox{
+    padding: 0px;
+  }
+  .altexqi{
+    font-size: 25px;
+  }
   .wcus{
     width: 150px;
     height: 150px;
@@ -910,7 +941,7 @@ text-align: center;
     top: 35px;
   }
   .updatewcusection{
-    padding: 0;
+    padding: 22px;
   }
 }
 
