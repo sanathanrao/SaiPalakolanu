@@ -55,12 +55,11 @@
   color: #444; 
   text-align: left; 
 } 
-
 .form-input { 
   color: #1c2d37;
   font-family: "Varela Round", sans-serif;
   padding: 10px; 
-  margin-bottom: 20px; 
+  margin-bottom: 10px; 
   border-radius: 10px; 
   font-size: 16px; 
   width: 100%; 
@@ -91,7 +90,27 @@
 
 .btn-submit:hover { 
   background-color: #4caf50; 
-}
+} 
+
+/* Keyframes for fadeInUp animation */ 
+@keyframes fadeInUp { 
+  from { 
+    opacity: 0; 
+    transform: translateY(20px); 
+  } 
+
+  to { 
+    opacity: 1; 
+    transform: translateY(0); 
+  } 
+} 
+
+/* Animation for popup */ 
+.overlay-container.show { 
+  display: flex; 
+  opacity: 1; 
+} 
+
 
 
 
@@ -130,6 +149,11 @@
   .simg{
     width: 350px;
     margin-left: 25px;
+  }
+  .wayltyey{
+    font-size: 20px;
+    font-family: "Varela Round", sans-serif;
+    margin-right: 30px;
   }
   .getintouch{
     color: #000;

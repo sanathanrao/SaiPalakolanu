@@ -43,8 +43,15 @@
       <input type="hidden" name="access_key" value="">
    
        <input class="form-input" type="text" placeholder="Enter Your Username" id="name" name="name" required>  
+       <input class="form-input" type="tel" placeholder="Enter your Phone" name="phone" pattern="[0-9]{3}-[0-9]{2}-[0-9]{3}" required> 
        <input class="form-input" type="email" placeholder="Enter Your Email" id="email" name="email" required> 
-       <textarea name="message" placeholder="Message.." class="form-input mesio" required></textarea>
+       <label class="wayltyey" >What are you looking for</label>
+                  <select class="selectopti">
+                    <option value="" disabled selected>Select your option</option>
+                    <option value="australia">Startup / Brand Consultation</option>
+                    <option value="canada">Internship</option>
+                    <option value="usa">Growth Consulting</option>
+                  </select>
 
        <button class="btn-submit"
            type="submit"> 
@@ -59,6 +66,12 @@
    </div> 
  </div> 
 
+ <script> 
+   function togglePopup() { 
+     const overlay = document.getElementById('popupOverlay'); 
+     overlay.classList.toggle('show'); 
+   } 
+ </script>
  <script> 
   function togglePopup() { 
     const overlay = document.getElementById('popupOverlay'); 
@@ -79,7 +92,7 @@
             </div>
 
             <div>
-              <button class="getintouch btn-open-popup" onclick="togglePopup()"  role="button">GET IN TOUCH</button>
+              <button class="getintouch" role="button" onclick="togglePopup()">GET IN TOUCH</button>
             </div>
             
              <!-- <div>
