@@ -634,8 +634,11 @@ box-shadow: rgba(0, 0, 0, 0.09) 0px 2px 1px, rgba(0, 0, 0, 0.09) 0px 4px 2px, rg
     width: 100%;
   }
 }
-
-
+@media screen and (max-width: 700px){
+  .testimonialsection{
+    padding: 20px;
+  }
+}
 
 
 
