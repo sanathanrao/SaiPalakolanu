@@ -132,11 +132,15 @@
     margin-left: 25px;
   }
   .getintouch{
+    color: #000;
     background: #EBFC72;
     padding: 20px 30px;
     margin-left: 20px;
-    font-size: 15px;
+    margin-right: 20px;
+    font-size: 20px;
     cursor: pointer;
+    display: inline-block;
+    font-family: "Work Sans", sans-serif;
   }
   .getintouch:hover{
     filter: brightness(0.9);
@@ -152,6 +156,9 @@
   nav ul li a{
     color: #212e21;
     font-size: 17px;
+  }
+  .servw{
+    display: none;
   }
   .checkbtn{
     font-size: 30px;
