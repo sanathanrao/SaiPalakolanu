@@ -4,7 +4,7 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Sai Palakolanu</title>
-    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/animate.css/4.1.1/animate.min.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/animate.css/4.1.1/animate.min.css"/>
     <link rel="icon" type="image/x-icon" href="/images/logocropbgii.png">
     <link rel="stylesheet" href="style.css">
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
@@ -31,6 +31,41 @@
 
 </head>
 <body>
+  <button class="btn-open-popup" onclick="togglePopup()"> 
+    Open Popup Form 
+ </button> 
+
+ <div id="popupOverlay"
+   class="overlay-container"> 
+   <div class="popup-box"> 
+     <h2 class="coenow">Contact Us</h2> 
+     <form action="https://api.web3forms.com/submit" method="POST"   name=”EmailForm”  class="form-container"> 
+      <input type="hidden" name="access_key" value="">
+   
+       <input class="form-input" type="text" placeholder="Enter Your Username" id="name" name="name" required>  
+       <input class="form-input" type="email" placeholder="Enter Your Email" id="email" name="email" required> 
+       <textarea name="message" placeholder="Message.." class="form-input mesio" required></textarea>
+
+       <button class="btn-submit"
+           type="submit"> 
+       Submit 
+       </button> 
+     </form> 
+
+     <button class="btn-close-popup"
+         onclick="togglePopup()"> 
+     Close 
+     </button> 
+   </div> 
+ </div> 
+
+ <script> 
+  function togglePopup() { 
+    const overlay = document.getElementById('popupOverlay'); 
+    overlay.classList.toggle('show'); 
+  } 
+</script>
+
     <!-- ------------------------------------- -->
         <nav>
             <div class="block">
@@ -42,14 +77,14 @@
                     <label class="logo"><img class="simg" src="images/logocropbgii.png"></label>
                 </div>
             </div>
-             <div class="block">
+             <div>
                 <ul>
-                    <li><a class="servw" href="#">Services</a></li>
-                    <li><a class="getintouch" href="#">GET IN TOUCH</a></li>
+                    <li><a  class="servw"  href="#">Services</a></li>
+                    <li><a class="getintouch">GET IN TOUCH</a></li>
                   </ul>
              </div>
             </nav>
-    <!-- -------------------------------------- -->
+    <!-- -- -->
            
             <div class="Businesses">
                 <h1 class="empower block">Empowering businesses with tailored Digital Marketing Strategies.</h1>
@@ -63,7 +98,7 @@
                 </div>
                 
                 <div>
-                    <h1 class="proftext block">Hello! I’m Sai Narasimhan Palakolanu, a dedicated digital marketing consultant 
+                    <h1 class="proftext block">Hello! I’m Sai Narasimhan Palakolanu a dedicated digital marketing consultant 
                         with over five years of experience in helping brands and startups achieve remarkable growth.  Whether you’re looking to transform your 
                         digital presence, scale your business, or gain advanced marketing skills, I’m here to provide 
                         the expertise and support you need to succeed. 
@@ -74,47 +109,57 @@
         
              <div class="servicessection">
                 <div>
-                    <h2 class="help block">How I can help your business.</h2>
+                    <h2 class="help block">How I can help your <span class="buhigh">business.</span></h2>
                            <!-- ----1-- -->
                  <div class="scaling block">
-                         <h2 class="busio block">➣ Business Scaling Solutions:</h2>
-
+                         <h2 class="busio block"> <span class="bssoyr">Business</span> scaling solutions:</h2>
+ 
                         <div class="dndcsk">
-                          <h3 class="cusmse block"><strong>● Customized Marketing Strategies:</strong> Tailored plans to meet your specific business goals.</h3>
+                           <h3 class="cusmse block"><strong>  <span class="ctmstahg">Customized</span> Marketing Strategies:</strong></h3>
+                           <h3 class="tomsbg block">Tailored plans to meet your specific business goals.</h3>
                         </div> 
                         <div class="dndcsk">
-                          <h3 class="cusmse block"><strong>● Lead Generation:</strong> Tailored plans to meet your specific business goals.</h3>
+                          <h3 class="cusmse block"><strong> <span class="ctmstahg">Lead</span> Generation:</strong></h3>
+                          <h3 class="tomsbg block">Proven techniques to attract and convert high-quality leads.</h3>
                         </div>
                         <div class="dndcsk">
-                          <h3 class="cusmse block"><strong>● Brand Building:</strong> Tailored plans to meet your specific business goals.</h3>
+                          <h3 class="cusmse block"><strong><span class="ctmstahg">Brand</span> Building:</strong></h3>
+                          <h3 class="tomsbg block">Elevate your brand’s presence and reputation online.</h3>
                         </div>
                  </div>
                              <!-- ----2-- -->
                  <div class="scaling block">
-                        <h2 class="busio block">➣ Digital Transformation:</h2>
+                        <h2 class="busio block"> <span class="bssoyr">Digital</span> Transformation:</h2>
 
                        <div class="dndcsk">
-                         <h3 class="cusmse block"><strong>● Website Optimization:</strong> Improve your website’s performance and user experience.</h3>
+                         <h3 class="cusmse block"><strong> <span class="ctmstahg">Website</span> Optimization:</strong></h3>
+                         <h3 class="tomsbg block">Improve your website’s performance and user experience.</h3>
                        </div> 
                        <div class="dndcsk">
-                         <h3 class="cusmse block"><strong>● SEO & SEM:</strong> Increase your visibility on search engines and attract organic traffic.</h3>
+                         <h3 class="cusmse block"><strong> <span class="ctmstahg">SEO</span>  SEO & SEM:</strong></h3>
+                         <h3 class="tomsbg block">Increase your visibility on search engines and attract organic traffic.</h3>
+
                        </div>
                        <div class="dndcsk">
-                         <h3 class="cusmse block"><strong>● Social Media Management:</strong>Enhance your brand’s engagement across social..</h3>
+                         <h3 class="cusmse block"><strong> <span class="ctmstahg">Social</span> Media Management:</strong></h3>
+                         <h3 class="tomsbg block">Enhance your brand’s engagement across social.</h3>
                        </div>
                  </div>
                                   <!-- ----3-- -->
                  <div class="scaling block">
-                     <h2 class="busio block">➣ Analytics & Reporting:</h2>
+                     <h2 class="busio block"> <span class="bssoyr">Analytics</span> & Reporting:</h2>
 
                     <div class="dndcsk">
-                      <h3 class="cusmse block"><strong>● Data-Driven Insights:</strong> Tailored plans to meet your specific business goals.</h3>
+                      <h3 class="cusmse block"><strong> <span class="ctmstahg">Data</span> Driven Insights:</strong></h3>
+                      <h3 class="tomsbg block">In-depth analysis of your marketing efforts.</h3>
                     </div> 
                     <div class="dndcsk">
-                      <h3 class="cusmse block"><strong>● Lead Generation:</strong> Tailored plans to meet your specific business goals.</h3>
+                      <h3 class="cusmse block"><strong> <span class="ctmstahg">Performance</span> Tracking:</strong></h3>
+                      <h3 class="tomsbg block">Regular reports to measure success and ROI.</h3>
                     </div>
                     <div class="dndcsk">
-                      <h3 class="cusmse block"><strong>● Brand Building:</strong> Tailored plans to meet your specific business goals.</h3>
+                      <h3 class="cusmse block"><strong> <span class="ctmstahg">Continuous</span> Improvement:</strong></h3>
+                      <h3 class="tomsbg block">Ongoing adjustments to optimize results.</h3>
                     </div>
                 </div>
                      
@@ -122,10 +167,10 @@
 
                 </div>  
 
-                <div class="sec block">
+                <div class="sec">
                     <img src="images/sercidg.jpeg" alt="">
                     <div class="secimgtwo">
-                        <img src="images/sercidg.jpeg" alt="">
+                        <img  src="images/sercidg.jpeg" alt="">
                     </div>
                 </div>
 
