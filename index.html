@@ -38,31 +38,28 @@
  <div id="popupOverlay"class="overlay-container"> 
    <div id="popup-box" class="popup-box"> 
      <h2 class="coenow">Contact Us</h2> 
-     <form action="https://api.web3forms.com/submit" method="POST"   name=”EmailForm”  class="form-container"> 
-      <input type="hidden" name="redirect" value="https://yourwebsite.com/thanku.html">
+     <p class="mscibasap">Please Write your message and contact information below. We Will respond as soon as possible.</p>
+     <!-- <form  action="thankyou.html"  method="get" name=”EmailForm”  class="form-container">  -->
+      <form action="https://api.web3forms.com/submit" method="POST"  name=”EmailForm”  class="form-container"></form>
+      <input type="hidden" name="access_key" value="4e2a6e80-4659-4f30-b225-381f222f98eb">
    
        <input class="form-input" type="text" placeholder="Enter Your Username" id="name" name="name" required>  
-       <input class="form-input" type="tel" placeholder="Enter your Phone" name="phone" pattern="[0-9]{3}-[0-9]{2}-[0-9]{3}" required> 
+       <input class="form-input" type="tel" placeholder="Enter your Phone" name="phone"  required> 
        <input class="form-input" type="email" placeholder="Enter Your Email" id="email" name="email" required> 
        <label class="wayltyey" >What are you looking for</label>
-                  <select class="selectcolet">
-                    <option value="" disabled selected>Select your option</option>
-                    <option value="australia">Startup / Brand Consultation</option>
-                    <option value="canada">Internship</option>
-                    <option value="usa">Digital Marketing Training</option>
-                  </select>
 
-       <button class="btn-submit"
-       onclick="location.href = '/thanku.html';"
-           type="submit"> 
-       Submit 
-       </button> 
+                  <select name id="dropdown" class="form-input selectcolet" onchange="updateText()">
+                    <option value="" disabled selected>Select your option</option>
+                    <option value="option1">Startup / Brand Consultation</option>
+                    <option value="option2">Internship</option>
+                    <option value="option3">Digital Marketing Training</option>
+                  </select>
+            
+            <!-- <button class="btn-submit"  type="submit"> Submit </button> -->
+       <button class="btn-submit" onclick="location.href = '/thankyou.html';" type="submit"> Submit </button> 
      </form> 
 
-     <button class="btn-close-popup"
-         onclick="togglePopup()"> 
-     Close 
-     </button> 
+     <button class="btn-close-popup" onclick="togglePopup()"> Close </button> 
    </div> 
  </div> 
 
@@ -70,7 +67,7 @@
    function togglePopup() { 
      const overlay = document.getElementById('popupOverlay'); 
      overlay.classList.toggle('show'); 
-   } 
+   }   
  </script>
  
 
@@ -204,9 +201,42 @@
                                       <img src="images/Tonique.png" height="100" width="100" wid alt="">
                                    </div>
                                    <div class="slide">
-                                    <img src="images/tekspot.jpg" height="100" alt="">
-                                 </div>
-
+                                    <img src="images/arvind.jpg" height="100" width="100" alt="">
+                                </div>
+                                <div class="slide">
+                                     <img src="images/exxeella.png" height="100" width="100" alt="">
+                                </div>
+                                <div class="slide">
+                                   <img src="images/ndr.png" height="100" width="100" alt="">
+                                </div>
+                                <div class="slide">
+                                   <img src="images/Tonique.png" height="100" width="100" wid alt="">
+                                </div>
+                                <div class="slide">
+                                  <img src="images/arvind.jpg" height="100" width="100" alt="">
+                              </div>
+                              <div class="slide">
+                                   <img src="images/exxeella.png" height="100" width="100" alt="">
+                              </div>
+                              <div class="slide">
+                                 <img src="images/ndr.png" height="100" width="100" alt="">
+                              </div>
+                              <div class="slide">
+                                 <img src="images/Tonique.png" height="100" width="100" wid alt="">
+                              </div>
+                              <div class="slide">
+                                <img src="images/arvind.jpg" height="100" width="100" alt="">
+                            </div>
+                            <div class="slide">
+                                 <img src="images/exxeella.png" height="100" width="100" alt="">
+                            </div>
+                            <div class="slide">
+                               <img src="images/ndr.png" height="100" width="100" alt="">
+                            </div>
+                            <div class="slide">
+                               <img src="images/Tonique.png" height="100" width="100" wid alt="">
+                            </div>
+                                   
                                 </div>
                              </div>
 

@@ -28,7 +28,7 @@
   z-index: 999;
 } 
 .coenow{
-  margin-bottom: 10px;
+  margin-bottom: 5px;
   font-family: "Varela Round", sans-serif;
   color: #000;
 }
@@ -68,6 +68,12 @@
   outline: none;
   box-sizing: border-box; 
 } 
+.mscibasap{
+  font-size: 16px;
+  color: #1c2d37;
+  font-family: "Varela Round", sans-serif;
+  margin-bottom: 10px;
+}
 
 .btn-submit, 
 .btn-close-popup { 
@@ -158,7 +164,6 @@
     width: 100%;
   outline: none;
   border-radius: 5px;
-  padding-left: 15px;
   font-size: 16px;
   border-bottom-width: 2px;
   transition: all 0.3s ease;
