@@ -40,6 +40,7 @@
     text-align: center;
     background-color: #fff;
     color: #212121;
+    border-radius: 20px;
 }
 .coentrade{
     font-family: "Varela Round", sans-serif;
@@ -103,6 +104,7 @@
     .humourbox{
         width: 340px;
         height: 275px;
+        border-radius: 20px;
     }
     .thlarg{
         font-size: 49px;
