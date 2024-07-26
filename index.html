@@ -35,12 +35,11 @@
     Open Popup Form 
  </button> 
 
- <div id="popupOverlay"
-   class="overlay-container"> 
-   <div class="popup-box"> 
+ <div id="popupOverlay"class="overlay-container"> 
+   <div id="popup-box" class="popup-box"> 
      <h2 class="coenow">Contact Us</h2> 
      <form action="https://api.web3forms.com/submit" method="POST"   name=”EmailForm”  class="form-container"> 
-      <input type="hidden" name="access_key" value="">
+      <input type="hidden" name="redirect" value="https://yourwebsite.com/thanku.html">
    
        <input class="form-input" type="text" placeholder="Enter Your Username" id="name" name="name" required>  
        <input class="form-input" type="tel" placeholder="Enter your Phone" name="phone" pattern="[0-9]{3}-[0-9]{2}-[0-9]{3}" required> 
@@ -54,6 +53,7 @@
                   </select>
 
        <button class="btn-submit"
+       onclick="location.href = '/thanku.html';"
            type="submit"> 
        Submit 
        </button> 
@@ -72,12 +72,7 @@
      overlay.classList.toggle('show'); 
    } 
  </script>
- <script> 
-  function togglePopup() { 
-    const overlay = document.getElementById('popupOverlay'); 
-    overlay.classList.toggle('show'); 
-  } 
-</script>
+ 
 
     <!-- ------------------------------------- -->
         <nav>
@@ -112,7 +107,7 @@
 
             <div class="profilesection">
                 <div class="profilepic block "> 
-                    <img src="images/profile.png" alt="">
+                    <img src="images/sprofilepic.jpg" alt="">
                 </div>
                 
                 <div>
@@ -226,57 +221,57 @@
               <div class="servicessection">
 
                 <div>
-                    <h2 class="help block">How I can help your <span class="buhigh">business.</span></h2>
+                    <h2 class="help block">Professional Training <span class="buhigh">Programs.</span></h2>
                            <!-- ----1-- -->
                  <div class="scaling block">
-                         <h2 class="busio block"> <span class="bssoyr">Business</span> scaling solutions:</h2>
+                         <h2 class="busio block"> <span class="bssoyr">Advanced</span> Digital Marketing Courses:</h2>
  
                         <div class="dndcsk">
-                           <h3 class="cusmse block"><strong>  <span class="ctmstahg">Customized</span> Marketing Strategies:</strong></h3>
-                           <h3 class="tomsbg block">Tailored plans to meet your specific business goals.</h3>
+                           <h3 class="cusmse block"><strong>  <span class="ctmstahg">Comprehensive</span> Training:</strong></h3>
+                           <h3 class="tomsbg block">Learn basics to advanced skills in digital marketing.</h3>
                         </div> 
                         <div class="dndcsk">
-                          <h3 class="cusmse block"><strong> <span class="ctmstahg">Lead</span> Generation:</strong></h3>
-                          <h3 class="tomsbg block">Proven techniques to attract and convert high-quality leads.</h3>
+                          <h3 class="cusmse block"><strong> <span class="ctmstahg">Hands-On</span> Experience:</strong></h3>
+                          <h3 class="tomsbg block">Gain practical knowledge through real-world projects.</h3>
                         </div>
                         <div class="dndcsk">
-                          <h3 class="cusmse block"><strong><span class="ctmstahg">Brand</span> Building:</strong></h3>
-                          <h3 class="tomsbg block">Elevate your brand’s presence and reputation online.</h3>
+                          <h3 class="cusmse block"><strong><span class="ctmstahg">Certification</span></strong></h3>
+                          <h3 class="tomsbg block">Receive a certificate upon course completion.</h3>
                         </div>
                  </div>
                              <!-- ----2-- -->
                  <div class="scaling block">
-                        <h2 class="busio block"> <span class="bssoyr">Digital</span> Transformation:</h2>
+                        <h2 class="busio block"> <span class="bssoyr">One-on-One</span> Mentorship:</h2>
 
                        <div class="dndcsk">
-                         <h3 class="cusmse block"><strong> <span class="ctmstahg">Website</span> Optimization:</strong></h3>
-                         <h3 class="tomsbg block">Improve your website’s performance and user experience.</h3>
+                         <h3 class="cusmse block"><strong> <span class="ctmstahg">Personalized</span> Guidance:</strong></h3>
+                         <h3 class="tomsbg block">Tailored advice to fast-track your career growth.</h3>
                        </div> 
                        <div class="dndcsk">
-                         <h3 class="cusmse block"><strong> <span class="ctmstahg">SEO</span>  SEO & SEM:</strong></h3>
-                         <h3 class="tomsbg block">Increase your visibility on search engines and attract organic traffic.</h3>
+                         <h3 class="cusmse block"><strong> <span class="ctmstahg">Career</span> Development:</strong></h3>
+                         <h3 class="tomsbg block"> Tips and strategies to enhance your professional journey..</h3>
 
                        </div>
                        <div class="dndcsk">
-                         <h3 class="cusmse block"><strong> <span class="ctmstahg">Social</span> Media Management:</strong></h3>
-                         <h3 class="tomsbg block">Enhance your brand’s engagement across social.</h3>
+                         <h3 class="cusmse block"><strong> <span class="ctmstahg">Networking</span> Opportunities:</strong></h3>
+                         <h3 class="tomsbg block">Connect with industry professionals and peers.</h3>
                        </div>
                  </div>
                                   <!-- ----3-- -->
                  <div class="scaling block">
-                     <h2 class="busio block"> <span class="bssoyr">Analytics</span> & Reporting:</h2>
+                     <h2 class="busio block"> <span class="bssoyr">Workshops</span> and Webinars:</h2>
 
                     <div class="dndcsk">
-                      <h3 class="cusmse block"><strong> <span class="ctmstahg">Data</span> Driven Insights:</strong></h3>
-                      <h3 class="tomsbg block">In-depth analysis of your marketing efforts.</h3>
+                      <h3 class="cusmse block"><strong> <span class="ctmstahg">Interactive</span> Sessions:</strong></h3>
+                      <h3 class="tomsbg block">Engage with experts in live workshops..</h3>
                     </div> 
                     <div class="dndcsk">
-                      <h3 class="cusmse block"><strong> <span class="ctmstahg">Performance</span> Tracking:</strong></h3>
-                      <h3 class="tomsbg block">Regular reports to measure success and ROI.</h3>
+                      <h3 class="cusmse block"><strong> <span class="ctmstahg">Current</span> Trends:</strong></h3>
+                      <h3 class="tomsbg block">Stay updated with the latest digital marketing trends.</h3>
                     </div>
                     <div class="dndcsk">
-                      <h3 class="cusmse block"><strong> <span class="ctmstahg">Continuous</span> Improvement:</strong></h3>
-                      <h3 class="tomsbg block">Ongoing adjustments to optimize results.</h3>
+                      <h3 class="cusmse block"><strong> <span class="ctmstahg">Skill</span> Enhancement:</strong></h3>
+                      <h3 class="tomsbg block">Sharpen your skills with focused training sessions..</h3>
                     </div>
                 </div>
                      
