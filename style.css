@@ -29,6 +29,8 @@
 } 
 .coenow{
   margin-bottom: 10px;
+  font-family: "Varela Round", sans-serif;
+  color: #000;
 }
 .popup-box { 
   color: #1c2d37;
@@ -36,8 +38,7 @@
   padding: 24px; 
   border-radius: 12px; 
   box-shadow: 0 0 20px rgba(0, 0, 0, 0.4); 
-  width: 320px; 
-  text-align: center; 
+  width: 320px;  
   opacity: 0; 
   transform: scale(0.8); 
   animation: fadeInUp 0.5s ease-out forwards; 
@@ -58,9 +59,9 @@
 .form-input { 
   color: #1c2d37;
   font-family: "Varela Round", sans-serif;
-  padding: 10px; 
+  padding: 7px; 
   margin-bottom: 10px; 
-  border-radius: 10px; 
+  border-radius: 5px; 
   font-size: 16px; 
   width: 100%; 
   border: 1px solid #1c2d37;
@@ -78,7 +79,7 @@
 } 
 
 .btn-submit { 
-  background-color: green; 
+  background-color: #000; 
   color: #fff; 
 } 
 
@@ -86,10 +87,6 @@
   margin-top: 12px; 
   background-color: #e74c3c; 
   color: #fff; 
-} 
-
-.btn-submit:hover { 
-  background-color: #4caf50; 
 } 
 
 /* Keyframes for fadeInUp animation */ 
@@ -151,9 +148,23 @@
     margin-left: 25px;
   }
   .wayltyey{
-    font-size: 20px;
+    color: #000;
     font-family: "Varela Round", sans-serif;
     margin-right: 30px;
+  }
+  .selectcolet{
+    height: 35px;
+    width: 100%;
+  outline: none;
+  border-radius: 5px;
+  padding-left: 15px;
+  font-size: 16px;
+  border-bottom-width: 2px;
+  transition: all 0.3s ease;
+  margin-top: 10px;
+  border: 1px solid #212121;
+  font-family: "Work Sans", sans-serif;
+  margin: 10px 0;
   }
   .getintouch{
     color: #000;
