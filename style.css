@@ -71,6 +71,7 @@
 
 .btn-submit, 
 .btn-close-popup { 
+  font-family: "Varela Round", sans-serif;
   padding: 12px 24px; 
   border: none; 
   border-radius: 8px; 
