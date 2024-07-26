@@ -3,6 +3,7 @@
     margin: 0;
     box-sizing: border-box;
     font-family: "Varela Round", sans-serif;
+    overflow: hidden;
 }
 
 .thankusize{
@@ -23,6 +24,7 @@
     margin-top: 0;
     font-size: 18px;
     font-weight: 500;
+    line-height: 27px;
 }
 .gazedlo{
     width: 250px;
@@ -60,4 +62,55 @@
     cursor: pointer;
     display: inline-block;
     font-family: "Work Sans", sans-serif;
+    border: none;
+    border-radius: 5px;
+    box-shadow: rgba(50, 50, 93, 0.25) 0px 2px 5px -1px, rgba(0, 0, 0, 0.3) 0px 1px 3px -1px;
+}
+@media screen and (max-width: 800px){
+    .humourbox{
+        width: 500px;
+        height: 250px;
+    }
+}
+@media screen and (max-width: 600px){
+    .humourbox{
+        width: 500px;
+        height: 250px;
+    }
+    .thlarg{
+        font-size: 60px;
+    }
+    .docents{
+        width: 70%;
+    }
+}
+@media screen and (max-width: 530px){
+    .humourbox{
+        width: 400px;
+        height: 300px;
+    }
+    .thlarg{
+        font-size: 50px;
+    }
+    .docents{
+        width: 70%;
+    }
+    .coentrade{
+        line-height: 22px;
+    }
+}
+@media screen and (max-width: 440px){
+    .humourbox{
+        width: 350px;
+        height: 280px;
+    }
+    .thlarg{
+        font-size: 49px;
+    }
+    .docents{
+        width: 70%;
+    }
+    .coentrade{
+        line-height: 22px;
+    }
 }
