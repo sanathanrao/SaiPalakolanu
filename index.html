@@ -8,6 +8,7 @@
     <link rel="icon" type="image/x-icon" href="/images/logocropbgii.png">
     <link rel="stylesheet" href="style.css">
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+     <script src="script.js"></script>
   
     <style>
       @keyframes appear{
@@ -40,8 +41,8 @@
      <h2 class="coenow">Contact Us</h2> 
      <p class="mscibasap">Please Write your message and contact information below. We Will respond as soon as possible.</p>
      <!-- <form  action="thankyou.html"  method="get" name=”EmailForm”  class="form-container">  -->
-      <form action="https://api.web3forms.com/submit" method="POST"  name=”EmailForm”  class="form-container"></form>
-      <input type="hidden" name="access_key" value="4e2a6e80-4659-4f30-b225-381f222f98eb">
+      <form is="myForm" action="send_email.php" method="POST" onsubmit="handleSubmit(event)" name="EmailForm"  class="form-container"></form>
+      <!-- <input type="hidden" name="access_key" value="4e2a6e80-4659-4f30-b225-381f222f98eb"> -->
    
        <input class="form-input" type="text" placeholder="Enter Your Username" id="name" name="name" required>  
        <input class="form-input" type="tel" placeholder="Enter your Phone" name="phone"  required> 
@@ -55,8 +56,8 @@
                     <option value="option3">Digital Marketing Training</option>
                   </select>
             
-            <!-- <button class="btn-submit"  type="submit"> Submit </button> -->
-        <button class="btn-submit" onclick="location.href = '/thankyou.html';" type="submit"> Submit </button> 
+            <button class="btn-submit"  type="submit"> Submit </button>
+        <!-- <button class="btn-submit" onclick="location.href = '/thankyou.html';" type="submit"> Submit </button>  -->
         
      </form> 
 
@@ -69,6 +70,24 @@
      const overlay = document.getElementById('popupOverlay'); 
      overlay.classList.toggle('show'); 
    }   
+
+   function handleSubmit(event) {
+            event.preventDefault(); // Prevent the default form submission
+
+            const form = document.getElementById('myForm');
+            const formData = new FormData(form);
+
+            fetch('send_email.php', {
+                method: 'POST',
+                body: formData
+            })
+            .then(response => response.text())
+            .then(result => {
+                // Redirect to the thank you page if submission was successful
+                window.location.href = 'thankyou.html';
+            })
+            .catch(error => console.error('Error:', error));
+        }
  </script>
  
 
@@ -524,9 +543,9 @@
                   <span class="details">What do you need help with?</span>
                   <select class="selectopti">
                     <option value="" disabled selected>Select your option</option>
-                    <option value="australia">SEO and Content Strategies</option>
-                    <option value="canada">Product Marketing</option>
-                    <option value="usa">Growth Consulting</option>
+                    <option value="australia">Startup / Brand Consultation</option>
+                    <option value="canada">Internship</option>
+                    <option value="usa">Digital Marketing Training</option>
                   </select>
                 </div>
 
@@ -574,7 +593,32 @@
                 Throughout my career, I’ve had the privilege of working with hundreds of brands, guiding them to scale their marketing and significantly improve their ROI. My tailored marketing strategies, innovative solutions, 
                 and data-driven insights have consistently delivered exceptional results, enhancing brand visibility, engagement, and revenue.
               </div>
-
             </div>  
+
+            <script> 
+              function togglePopup() { 
+                const overlay = document.getElementById('popupOverlay'); 
+                overlay.classList.toggle('show'); 
+              }   
+           
+              function handleSubmit(event) {
+                       event.preventDefault(); // Prevent the default form submission
+           
+                       const form = document.getElementById('myForm');
+                       const formData = new FormData(form);
+           
+                       fetch('send_email.php', {
+                           method: 'POST',
+                           body: formData
+                       })
+                       .then(response => response.text())
+                       .then(result => {
+                           // Redirect to the thank you page if submission was successful
+                           window.location.href = 'thankyou.html';
+                       })
+                       .catch(error => console.error('Error:', error));
+                   }
+            </script>
+
 </body>
 </html>
