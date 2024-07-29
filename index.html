@@ -40,30 +40,49 @@
    <div id="popup-box" class="popup-box"> 
      <h2 class="coenow">Contact Us</h2> 
      <p class="mscibasap">Please Write your message and contact information below. We Will respond as soon as possible.</p>
-     <form  action="thankyou.html"  method="get" name=”EmailForm”  class="form-container"> 
+     <form  action="send_email.php" method="post" name=”EmailForm”  id="contactForm" class="form-container"> 
       <!-- <form is="myForm" action="send_email.php" method="POST" onsubmit="handleSubmit(event)" name="EmailForm"  class="form-container"> -->
       <!-- <input type="hidden" name="access_key" value="4e2a6e80-4659-4f30-b225-381f222f98eb"> -->
    
        <input class="form-input" type="text" placeholder="Enter Your Username" id="name" name="name" required>  
-       <input class="form-input" type="tel" placeholder="Enter your Phone" name="phone"  required> 
+       <input class="form-input" type="tel" placeholder="Enter your Phone" id="phone" name="phone"  required> 
        <input class="form-input" type="email" placeholder="Enter Your Email" id="email" name="email" required> 
-       <label class="wayltyey" >What are you looking for</label>
-
-                  <select name id="dropdown" class="form-input selectcolet">
-                    <option value="" disabled selected>Select your option</option>
-                    <option value="option1">Startup / Brand Consultation</option>
-                    <option value="option2">Internship</option>
-                    <option value="option3">Digital Marketing Training</option>
-                  </select>
+    
+        <label class="wayltyey" for="subject">What are you looking for:</label>
+        <select id="subject" name="subject" class="form-input selectcolet" required>
+            <option value="General Inquiry">Startup / Brand Consultation</option>
+            <option value="Intership">Internship</option>
+            <option value="Digital Marketing Training">Digital Marketing Training</option>
+        </select><br><br>
             
-            <!-- <button class="btn-submit"  type="submit"> Submit </button> -->
-        <button class="btn-submit" onclick="location.href = '/thankyou.html';" type="submit"> Submit </button> 
+            <button class="btn-submit"  type="submit"> Submit </button>
+        <!-- <button class="btn-submit" onclick="location.href = '/thankyou.html';" type="submit"> Submit </button>  -->
         
      </form> 
 
      <button class="btn-close-popup" onclick="togglePopup()"> Close </button> 
    </div> 
  </div> 
+
+ <script>
+  document.getElementById('contactForm').addEventListener('submit', function(event) {
+      event.preventDefault();
+      var form = event.target;
+      fetch(form.action, {
+          method: form.method,
+          body: new FormData(form)
+      }).then(response => {
+          if (response.ok) {
+              window.location.href = 'thankyou.html';
+          } else {
+              alert('There was a problem with the form submission.');
+          }
+      }).catch(error => {
+          console.error('Error:', error);
+          alert('There was a problem with the form submission.');
+      });
+  });
+</script>
 
  <script> 
    function togglePopup() { 
