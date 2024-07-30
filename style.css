@@ -1,6 +1,15 @@
 @import url('https://fonts.googleapis.com/css2?family=Work+Sans:ital,wght@0,100..900;1,100..900&display=swap');
 @import url('https://fonts.googleapis.com/css2?family=Varela+Round&display=swap');
 
+.btn-submit:active {
+  background-color: rgb(36, 174, 96);
+  transform: translateY(4px);
+}
+.btn-submit:hover{
+  background-color: rgb(30, 120, 20);
+}
+
+/* ---------------------- */
 .btn-open-popup { 
   display: none;
   padding: 12px 24px; 
@@ -1345,16 +1354,20 @@ option[value=""][disabled] {
   border: 1px solid #212121;
 }
 .getivbqn{
-  font-weight: 500;
+  font-weight: 600;
   border: none;
   color: #F4F3E8;
   background: #212E21;
   padding: 20px 50px;
   font-size: 16px;
   margin-top: 10px;
+  cursor: pointer;
 }
 .getivbqn:hover{
-  filter: brightness(1.2);
+  background-color: seagreen;
+}
+.getivbqn:active{
+  transform: translateY(10px);
 }
 .potential{
   font-size: 20px;

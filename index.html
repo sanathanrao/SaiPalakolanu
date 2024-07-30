@@ -40,7 +40,7 @@
    <div id="popup-box" class="popup-box"> 
      <h2 class="coenow">Contact Us</h2> 
      <p class="mscibasap">Please Write your message and contact information below. We Will respond as soon as possible.</p>
-     <form  action="send_email.php" method="post" name=”EmailForm”  id="contactForm" class="form-container"> 
+    <form  action="send_email.php" method="post" name=”EmailForm”  id="contactForm" class="form-container"> 
       <!-- <form is="myForm" action="send_email.php" method="POST" onsubmit="handleSubmit(event)" name="EmailForm"  class="form-container"> -->
       <!-- <input type="hidden" name="access_key" value="4e2a6e80-4659-4f30-b225-381f222f98eb"> -->
    
@@ -50,7 +50,7 @@
     
         <label class="wayltyey" for="subject">What are you looking for:</label>
         <select id="subject" name="subject" class="form-input selectcolet" required>
-            <option value="General Inquiry">Startup / Brand Consultation</option>
+            <option value="Startup / Brand Consultation">Startup / Brand Consultation</option>
             <option value="Intership">Internship</option>
             <option value="Digital Marketing Training">Digital Marketing Training</option>
         </select><br><br>
@@ -109,7 +109,6 @@
         }
  </script>
  
-
     <!-- ------------------------------------- -->
         <nav>
             <div class="block">
@@ -398,19 +397,6 @@
                  </div>
                </div>
             </div>
-              
-            
-
-
-
-
-
-
-
-
-
-
-
 
              <!-- ------------------------Why choose me ?------------------------------ -->
              <!-- <div class="whychosmesection">
@@ -432,6 +418,7 @@
              </div> 
            </div> -->
            <!-- ----- ----------------Updatde wcu------------------------------------------------------------------ -->
+
           <div class="updatewcusection">  
 
               <div class="graycircle">
@@ -540,44 +527,66 @@
            </div>
 
            <div class="container">
-            <form action="mailto:sai@digicarotene.com">
+            <form  action="gst.php" method="post" name=”EmailForm”  id="contactFormgst" class="form-container">
+            <!-- <form action="mailto:sai@digicarotene.com"> -->
 
               <div class="user__details">
                 <div class="input__box">
                   <span class="details">First Name (required) </span>
-                  <input type="text" placeholder="type here.."  required>
+                  <input id="firstname" name="firstname" type="text" placeholder="type here.."  required>
                 </div>
                 <div class="user__details input__box">
                   <span class="details">Last Name (required) </span>
-                  <input type="text" placeholder="type here.." required>
+                  <input id="lastname" name="lastname" type="text" placeholder="type here.." required>
                 </div>
               </div>  
 
                 <div class="input__box">
                   <span class="details">Email (required) </span>
-                  <input class="emailplaceqwer" type="email" placeholder="your mail.." required>
+                  <input id="email" name="email" class="emailplaceqwer" type="email" placeholder="your mail.." required>
                 </div>
 
                 <div class="input__box">
                   <span class="details">What do you need help with?</span>
-                  <select class="selectopti">
+                  <select id="subject" name="subject" class="selectopti">
                     <option value="" disabled selected>Select your option</option>
-                    <option value="australia">Startup / Brand Consultation</option>
-                    <option value="canada">Internship</option>
-                    <option value="usa">Digital Marketing Training</option>
+                    <option value="Startup / Brand Consultation">Startup / Brand Consultation</option>
+                    <option value="Intership">Internship</option>
+                    <option value="Digital Marketing Training">Digital Marketing Training</option>
                   </select>
                 </div>
 
                 <div class="input__box ">
                   <span class="details">Message</span>
-                  <textarea class="textsomeiie" placeholder="Write something.."></textarea>
+                  <textarea  id="message" name="message" class="textsomeiie" placeholder="Write something.."></textarea>
                 </div>
                
-              <button class="getivbqn">GET IN TOUCH</button>
+              <button type="submit" class="getivbqn">GET IN TOUCH</button>
 
             </form>
           </div>
         </div>
+
+        <script>
+          document.getElementById('contactFormgst').addEventListener('submit', function(event) {
+              event.preventDefault();
+              var form = event.target;
+              fetch(form.action, {
+                  method: form.method,
+                  body: new FormData(form)
+              }).then(response => {
+                  if (response.ok) {
+                      window.location.href = 'thankyou.html';
+                  } else {
+                      alert('There was a problem with the form submission.');
+                  }
+              }).catch(error => {
+                  console.error('Error:', error);
+                  alert('There was a problem with the form submission.');
+              });
+          });
+        </script>
+
         <!-- ------------------------------Join the Community---------------------------------------------->
         <div class="community">
 
@@ -594,8 +603,6 @@
 
        </div>      
          
-
-
           <!-- --------------------Contact Us----------------------------------------- -->  
             <div class="contactme">
               <div class="nameandlink">

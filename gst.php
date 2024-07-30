@@ -5,10 +5,11 @@ use PHPMailer\PHPMailer\Exception;
 require 'vendor/autoload.php';
 
 if ($_SERVER["REQUEST_METHOD"] == "POST") {
-    $name = htmlspecialchars($_POST['name']);
-    $phone = htmlspecialchars($_POST['phone']);
+    $firstname = htmlspecialchars($_POST['firstname']);
+    $lastname = htmlspecialchars($_POST['lastname']);
     $email = htmlspecialchars($_POST['email']);
     $subject = htmlspecialchars($_POST['subject']);
+    $message = htmlspecialchars($_POST['message']);
     
     $mail = new PHPMailer(true);
 
@@ -29,8 +30,8 @@ if ($_SERVER["REQUEST_METHOD"] == "POST") {
         //Content
         $mail->isHTML(true);  // Set email format to HTML
         $mail->Subject = 'New Contact Form Submission';
-        $mail->Body    = "Name: $name<br>Phone: $phone<br>Email: $email<br>Subject: $subject<br>";
-        $mail->AltBody = "Name: $name\nPhone: $phone\nEmail: $email\nSubject: $subject";
+        $mail->Body    = "First Name: $firstname<br>Last Name: $lastname<br>Email: $email<br>Subject: $subject<br>Message:<br>$message";
+        $mail->AltBody = "First Name: $firstname\nLast Name: $lastname\nEmail: $email\nSubject: $subject\nMessage:\n$message";
 
         $mail->send();
         http_response_code(200);
