@@ -1396,7 +1396,6 @@ option[value=""][disabled] {
   color: #f3f2e7;
 }
 .nameandlink{
-  margin-right: 100px;
   width: 100%;
   text-align: center;
 }
@@ -1426,7 +1425,7 @@ option[value=""][disabled] {
  font-style: italic;
 }
 
-@media screen and (max-width: 1000px){
+@media screen and (max-width: 1025px){
   .contactme{
     flex-direction: column;
   }
