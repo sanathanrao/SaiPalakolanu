@@ -10,7 +10,7 @@
 }
 
 /* ---------------------- */
-/* .btn-open-popup { 
+.btn-open-popup { 
   display: none;
   padding: 12px 24px; 
   font-size: 18px; 
@@ -21,7 +21,7 @@
   cursor: pointer; 
   transition: background-color 0.3s ease; 
   text-decoration: none;
-}  */
+} 
 
 .overlay-container { 
   display: none; 
