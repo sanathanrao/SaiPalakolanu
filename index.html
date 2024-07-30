@@ -32,7 +32,7 @@
 
 </head>
 <body>
-  <button id="openPopup" class="btn-open-popup" onclick="togglePopup()"> 
+  <button id="openPopup" class="btn-open-popup" > 
     Open Popup Form 
  </button> 
 
@@ -68,18 +68,18 @@
     // script.js
 document.addEventListener('DOMContentLoaded', function() {
     var popup = document.getElementById('popupOverlay');
-    var popupContent = document.getElementById('popupContent');
+    var popupContent = document.getElementById('popup-box');
     var openPopup = document.getElementById('openPopup');
 
     // Show the popup when the button is clicked
     openPopup.addEventListener('click', function() {
-        popup.style.display = 'block';
+      popupOverlay.style.display = 'block';
     });
 
     // Hide the popup when clicking outside the popup content
     window.addEventListener('click', function(event) {
         if (event.target == popupOverlay) {
-            popup.style.display = 'none';
+          popupOverlay.style.display = 'none';
         }
     });
 });
