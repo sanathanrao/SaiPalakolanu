@@ -502,6 +502,9 @@
   color: violet;
   text-decoration: dashed;
 }
+.buhighsay{
+  color: #e74c3c;
+}
 
 .servicesbtn{
   cursor: pointer;
@@ -797,7 +800,7 @@ box-shadow: 10px 10px 40px -22px rgba(0,0,0,0.75);
   font-weight: 600;
 }
 .sayoueif{
-  color: crimson;
+  color: #e74c3c;
   font-weight: bolder;
 }
 .graycircle{
