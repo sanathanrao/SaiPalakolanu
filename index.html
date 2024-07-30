@@ -32,7 +32,7 @@
 
 </head>
 <body>
-  <button class="btn-open-popup" onclick="togglePopup()"> 
+  <button id="openPopup" class="btn-open-popup" onclick="togglePopup()"> 
     Open Popup Form 
  </button> 
 
@@ -60,9 +60,31 @@
         
      </form> 
 
-     <button class="btn-close-popup" onclick="togglePopup()"> Close </button> 
+     <!-- <button class="btn-close-popup" onclick="togglePopup()"> Close </button>  -->
    </div> 
  </div> 
+
+   <script>
+    // script.js
+document.addEventListener('DOMContentLoaded', function() {
+    var popup = document.getElementById('popupOverlay');
+    var popupContent = document.getElementById('popupContent');
+    var openPopup = document.getElementById('openPopup');
+
+    // Show the popup when the button is clicked
+    openPopup.addEventListener('click', function() {
+        popup.style.display = 'block';
+    });
+
+    // Hide the popup when clicking outside the popup content
+    window.addEventListener('click', function(event) {
+        if (event.target == popupOverlay) {
+            popup.style.display = 'none';
+        }
+    });
+});
+
+   </script>
 
  <script>
   document.getElementById('contactForm').addEventListener('submit', function(event) {
@@ -646,10 +668,10 @@
             </div>  
 
             <script> 
-              function togglePopup() { 
-                const overlay = document.getElementById('popupOverlay'); 
-                overlay.classList.toggle('show'); 
-              }   
+              // function togglePopup() { 
+              //   const overlay = document.getElementById('popupOverlay'); 
+              //   overlay.classList.toggle('show'); 
+              // }   
            
               function handleSubmit(event) {
                        event.preventDefault(); // Prevent the default form submission
