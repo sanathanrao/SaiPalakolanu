@@ -37,7 +37,7 @@
  </button> 
 
  <div id="popupOverlay"class="overlay-container"> 
-   <div id="popupContent" class="popup-box"> 
+   <div id="popupContent" class="popup-box" onclick="stopPropagation(event)"> 
      <h2 class="coenow">Contact Us</h2> 
      <p class="mscibasap">Please Write your message and contact information below. We Will respond as soon as possible.</p>
     <form  action="send_email.php" method="post" name=”EmailForm”  id="contactForm" class="form-container"> 
@@ -65,24 +65,25 @@
  </div> 
 
    <script>
-    // script.js
-document.addEventListener('DOMContentLoaded', function() {
-    var popupOverlay = document.getElementById('popupOverlay');
-    var openPopup = document.getElementById('openPopup');
-   
-    // Show the popup when the button is clicked
-    openPopup.addEventListener('click', function() {
-      popupOverlay.style.display = 'block';
-    });
+      function togglePopup() { 
+                const overlay = document.getElementById('popupOverlay'); 
+                overlay.classList.toggle('show'); 
+              }   
 
+              function stopPropagation(event) {
+                   event.stopPropagation();
+               }
 
-    // Hide the popup when clicking outside the popup content
-    window.addEventListener('click', function(event) {
-        if (event.target == popupOverlay) {
-          popupOverlay.style.display = 'none';
-        }
-    });
-});
+                document.addEventListener('DOMContentLoaded', function () {
+                const overlay = document.getElementById('popupOverlay');
+    
+    // Ensure the popup closes when clicking outside the content
+                  overlay.addEventListener('click', function (event) {
+                  if (event.target === overlay) {
+                   togglePopup();
+                  }
+                 });
+              });
 
    </script>
 
@@ -676,10 +677,6 @@ document.addEventListener('DOMContentLoaded', function() {
             </div>  
 
             <script> 
-              function togglePopup() { 
-                const overlay = document.getElementById('popupOverlay'); 
-                overlay.classList.toggle('show'); 
-              }   
            
               function handleSubmit(event) {
                        event.preventDefault(); // Prevent the default form submission
