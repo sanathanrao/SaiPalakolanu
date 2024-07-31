@@ -37,7 +37,7 @@
  </button> 
 
  <div id="popupOverlay"class="overlay-container"> 
-   <div id="popup-box" class="popup-box"> 
+   <div id="popupContent" class="popup-box"> 
      <h2 class="coenow">Contact Us</h2> 
      <p class="mscibasap">Please Write your message and contact information below. We Will respond as soon as possible.</p>
     <form  action="send_email.php" method="post" name=”EmailForm”  id="contactForm" class="form-container"> 
@@ -45,7 +45,7 @@
       <!-- <input type="hidden" name="access_key" value="4e2a6e80-4659-4f30-b225-381f222f98eb"> -->
    
        <input class="form-input" type="text" placeholder="Enter Your Username" id="name" name="name" required>  
-       <input class="form-input" type="tel" placeholder="Enter your Phone" id="phone" name="phone"  required> 
+       <input class="form-input" type="tel" placeholder="Enter your Phone" id="phone" name="phone" pattern="[0-9]{10}"  required> 
        <input class="form-input" type="email" placeholder="Enter Your Email" id="email" name="email" required> 
     
         <label class="wayltyey" for="subject">What are you looking for:</label>
@@ -67,14 +67,14 @@
    <script>
     // script.js
 document.addEventListener('DOMContentLoaded', function() {
-    var popup = document.getElementById('popupOverlay');
-    var popupContent = document.getElementById('popup-box');
+    var popupOverlay = document.getElementById('popupOverlay');
     var openPopup = document.getElementById('openPopup');
-
+   
     // Show the popup when the button is clicked
     openPopup.addEventListener('click', function() {
       popupOverlay.style.display = 'block';
     });
+
 
     // Hide the popup when clicking outside the popup content
     window.addEventListener('click', function(event) {
@@ -107,10 +107,15 @@ document.addEventListener('DOMContentLoaded', function() {
 </script>
 
  <script> 
-   function togglePopup() { 
-     const overlay = document.getElementById('popupOverlay'); 
-     overlay.classList.toggle('show'); 
-   }   
+  //  function togglePopup() { 
+  //    const overlay = document.getElementById('popupOverlay'); 
+  //    overlay.classList.toggle('show'); 
+  //  }   
+
+  document.getElementById('phone').addEventListener('input', function (e) {
+    e.target.value = e.target.value.replace(/[^0-9]/g, '');
+  });
+
 
    function handleSubmit(event) {
             event.preventDefault(); // Prevent the default form submission
@@ -233,7 +238,7 @@ document.addEventListener('DOMContentLoaded', function() {
                     </div>
                 </div>
                      
-                <button onclick="togglePopup()" class="servicesbtn block">Speak to me</button>
+                <!-- <button onclick="togglePopup()" class="servicesbtn block">Speak to me</button> -->
 
                 </div>  
 
