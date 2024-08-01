@@ -15,7 +15,7 @@
     height: 100vh;
     text-align: center;
     background: rgb(244,243,232);
-  background: linear-gradient(180deg, rgba(244,243,232,1) 0%, rgba(209,218,202,1) 24%, rgba(174,192,171,1) 67%);
+background: linear-gradient(180deg, rgba(244,243,232,1) 28%, rgba(174,192,171,1) 80%);
 }
 .thlarg{
     font-size: 80px;
