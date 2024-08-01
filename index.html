@@ -103,6 +103,8 @@
       }).catch(error => {
           console.error('Error:', error);
           // alert('There was a problem with the form submission.');
+
+        form.reset();
       });
   });
 
@@ -111,6 +113,13 @@
             const selectedOption = document.getElementById('subject').value;
             localStorage.setItem('form1SelectedOption', selectedOption);
             window.location.href = 'thankyou.html?form=form1';
+        });
+
+        document.addEventListener("DOMContentLoaded", function() {
+            document.getElementById("contactForm").addEventListener("submit", function(event) {
+                event.preventDefault(); // Prevent form submission for testing
+                this.reset(); // Clear the form fields
+            });
         });
 
 </script>
@@ -645,8 +654,16 @@
             event.preventDefault();
             const selectedOption = document.getElementById('subject2').value;
             localStorage.setItem('form2SelectedOption', selectedOption);
-            window.location.href = 'thankyou.html?form=form2';
+            window.location.href = 'thankyou.html?form=form2'; 
         });
+          
+        document.addEventListener("DOMContentLoaded", function() {
+            document.getElementById("contactFormgst").addEventListener("submit", function(event) {
+                event.preventDefault(); // Prevent form submission for testing
+                this.reset(); // Clear the form fields
+            });
+        });
+        
         </script>
 
         <!-- ------------------------------Join the Community---------------------------------------------->
