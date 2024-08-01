@@ -16,38 +16,59 @@
     </div>
 
     <div class="humourbox">
-        <h2 id="thankYouHeading" class="dbo">Dear, Business Owner.</h2>
-        <p id="selectedOptionText" class="coentrade">If you want to know more about Digital Marketing or tips to scale your 
-            business you can join our community. This community nurtures and 
-            provides information about the strategies and tips to scale their businesses.
-        </p>
+        <h2 id="thankYouHeading" class="dbo">Thank you!</h2>
+        <p id="selectedOptionText" class="coentrade">.</p>
         <a href="https://shorturl.at/Gkg6n" target="_blank"><button class="phagibbt" >Join Now</button></a>
     </div>
 
     </div>
 
     <script>
-        const selectedOption = localStorage.getItem('selectedOption');
+        const urlParams = new URLSearchParams(window.location.search);
+        const form = urlParams.get('form');
         const heading = document.getElementById('thankYouHeading');
         const paragraph = document.getElementById('selectedOptionText');
 
-        switch (selectedOption) {
-            case 'Startup / Brand Consultation':
-                heading.innerText = 'Dear, Business Owner.';
-                paragraph.innerText = 'If you want to know more about Digital Marketing or tips to scale your business you can join our community. This community nurtures and provides information about the strategies and tips to scale their businesses.';
-                break;
-            case 'Intership':
-                heading.innerText = 'Dear Student,';
-                paragraph.innerText = 'If you want to learn about Digital Marketing or to scale your career in Digital Marketing, this community is for you. Through this community we conduct regular workshops, provide real time information and latest updates in digital marketing that will help you.';
-                break;
-            case 'Digital Marketing Training':
-                heading.innerText = 'Dear Student,';
-                paragraph.innerText = 'If you want to learn about Digital Marketing or to scale your career in Digital Marketing, this community is for you. Through this community we conduct regular workshops, provide real time information and latest updates in digital marketing that will help you.';
-                break;
-            default:
-                heading.innerText = 'Thank You!';
-                paragraph.innerText = 'You did not select a valid option.';
-                break;
+        if (form === 'form1') {
+            const selectedOption = localStorage.getItem('form1SelectedOption');
+            switch (selectedOption) {
+                case 'Startup / Brand Consultation':
+                    heading.innerText = 'Dear, Business Owner.';
+                    paragraph.innerText = 'If you want to know more about Digital Marketing or tips to scale your business you can join our community. This community nurtures and provides information about the strategies and tips to scale their businesses.';
+                    break;
+                case 'Intership':
+                    heading.innerText = 'Dear Student,';
+                    paragraph.innerText = 'If you want to learn about Digital Marketing or to scale your career in Digital Marketing, this community is for you. Through this community we conduct regular workshops, provide real time information and latest updates in digital marketing that will help you.';
+                    break;
+                case 'Digital Marketing Training':
+                    heading.innerText = 'Dear Student,';
+                    paragraph.innerText = 'If you want to learn about Digital Marketing or to scale your career in Digital Marketing, this community is for you. Through this community we conduct regular workshops, provide real time information and latest updates in digital marketing that will help you.';
+                    break;
+                default:
+                    heading.innerText = 'Thank You!';
+                    paragraph.innerText = 'You did not select a valid option.';
+                    break;
+            }
+        } else if (form === 'form2') {
+            const selectedOption = localStorage.getItem('form2SelectedOption');
+            switch (selectedOption) {
+                case 'Startup / Brand Consultation A':
+                    heading.innerText = 'Dear, Business Owner.';
+                    paragraph.innerText = 'If you want to know more about Digital Marketing or tips to scale your business you can join our community. This community nurtures and provides information about the strategies and tips to scale their businesses.';
+                    break;
+                case 'Intership B':
+                    heading.innerText = 'Dear Student,';
+                    paragraph.innerText = 'If you want to learn about Digital Marketing or to scale your career in Digital Marketing, this community is for you. Through this community we conduct regular workshops, provide real time information and latest updates in digital marketing that will help you.';
+                    break;
+                case 'Digital Marketing Training C':
+                    heading.innerText = 'Dear Student,';
+                    paragraph.innerText = 'If you want to learn about Digital Marketing or to scale your career in Digital Marketing, this community is for you. Through this community we conduct regular workshops, provide real time information and latest updates in digital marketing that will help you.';
+                    break;
+                default:
+                    heading.innerText = 'Thank You!';
+                    paragraph.innerText = 'You did not select a valid option.';
+                    break;
+            }
         }
     </script>
 
