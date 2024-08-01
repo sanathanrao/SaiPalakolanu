@@ -105,6 +105,14 @@
           alert('There was a problem with the form submission.');
       });
   });
+
+  document.getElementById('contactForm').addEventListener('submit', function(event) {
+            event.preventDefault();
+            const selectedOption = document.getElementById('subject').value;
+            localStorage.setItem('selectedOption', selectedOption);
+            window.location.href = 'thankyou.html';
+        });
+
 </script>
 
  <script> 
